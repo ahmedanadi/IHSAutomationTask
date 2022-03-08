@@ -34,5 +34,16 @@ namespace IHSAutomationTask
 
             Assert.True(output == "Hello World");
         }
+
+        [Test]
+        public void Test2()
+        {
+            string nugetName = "NUnit";
+            string version = "3.12.0";
+
+            consolePage.AddNugetPackage(nugetName, version);
+
+            Assert.True(consolePage.NugetWasAdded(nugetName));
+        }
     }
 }
