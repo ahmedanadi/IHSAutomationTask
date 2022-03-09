@@ -18,16 +18,12 @@ namespace IHSAutomationTask.Pages
         }
 
         public IWebElement runBtn => driver.FindElement(By.Id("run-button"));
-
         public IWebElement runLoader => driver.FindElement(By.Id("stats-loader"));
-
         private IWebElement outputText => driver.FindElement(By.Id("output"));
-
         private IWebElement nugetPackagesSearch => driver.FindElement(By.ClassName("new-package"));
         private IWebElement nugetSearchSpinner => driver.FindElement(By.ClassName("nuget-search-spinner"));
         private IWebElement nugetSearchMenu => driver.FindElement(By.Id("menu"));
         private IWebElement addedNugetsList => driver.FindElement(By.ClassName("nuget-packages"));
-
         private IWebElement preloadingDialog => driver.FindElement(By.Id("preload-dialog"));
 
         public string GetOutput()
